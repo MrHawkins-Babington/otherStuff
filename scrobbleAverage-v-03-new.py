@@ -69,7 +69,7 @@ print("Your current play average is: ", rounded)
 # #works out how many tracks need to be listened to
 target = int(input("What is your target average? "))
 scrobblesNeeded = target * monthLength
-print("To achieve that you have to listen to", scrobblesNeeded)
+print("To achieve that you have to listen to", scrobblesNeeded, "tracks")
 scrobblesToGet = scrobblesNeeded - scrobbles
 print("You need to listen to another", scrobblesToGet, "tracks")
 
@@ -81,6 +81,7 @@ if daysLeft != 0:
     daily = scrobblesToGet / daysLeft
     daily = math.floor(daily)
     print("You need to listen to about", daily, "tracks a day.")
+    print("Thank you for using the Average Scrobble calculator.")
 else:
     print("Thank you for using the Average Scrobble calculator.")
 print("End")
